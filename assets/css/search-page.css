@@ -1,0 +1,463 @@
+/* Search Results Page Styles */
+
+.us-search-results-page {
+    padding: 40px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.us-search-page-container {
+    width: 100%;
+}
+
+/* Search Header */
+.us-search-page-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.us-search-page-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.us-search-page-title span {
+    color: #2271b1;
+    font-style: italic;
+}
+
+.us-search-page-count {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0 30px;
+}
+
+.us-search-page-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Search Sections */
+.us-search-section {
+    margin-bottom: 60px;
+}
+
+.us-search-section-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 30px;
+    padding: 15px 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    border-left: 4px solid #2271b1;
+}
+
+/* Grid Layout */
+.us-search-results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+/* Result Cards */
+.us-search-result-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.us-search-result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #2271b1;
+}
+
+.us-card-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Card Image */
+.us-card-image {
+    width: 100%;
+    height: 220px;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.us-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.us-search-result-card:hover .us-card-image img {
+    transform: scale(1.08);
+}
+
+/* Card Content */
+.us-card-content {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Badge */
+.us-card-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    width: fit-content;
+}
+
+.us-card-badge.product {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.us-card-badge.post {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+/* Card Title */
+.us-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    line-height: 1.4;
+    margin: 0 0 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    min-height: 50px;
+}
+
+.us-card-link:hover .us-card-title {
+    color: #2271b1;
+}
+
+/* Card Excerpt */
+.us-card-excerpt {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin: 12px 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/* Post Meta */
+.us-card-meta {
+    display: flex;
+    gap: 15px;
+    margin: 12px 0;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #999;
+    flex-wrap: wrap;
+}
+
+.us-meta-date:before {
+    content: "📅 ";
+    margin-right: 4px;
+}
+
+.us-meta-author:before {
+    content: "✍️ ";
+    margin-right: 4px;
+}
+
+/* Price Section */
+.us-card-price-section {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.us-card-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2271b1;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.us-card-price del {
+    color: #999;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.us-card-price ins {
+    text-decoration: none;
+    color: #d63638;
+}
+
+/* Card Actions */
+.us-card-actions {
+    padding: 15px;
+    background: #f8f8f8;
+    border-top: 1px solid #e5e5e5;
+}
+
+.us-add-to-cart-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background: #2271b1;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.us-add-to-cart-btn:hover {
+    background: #135e96;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(33, 113, 177, 0.3);
+}
+
+/* Pagination */
+.us-search-pagination {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 2px solid #e5e5e5;
+}
+
+.us-search-pagination .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.us-search-pagination .page-numbers {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.us-search-pagination .page-numbers:hover {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+.us-search-pagination .page-numbers.current {
+    background: #2271b1;
+    color: #fff;
+    border-color: #2271b1;
+}
+
+.us-search-pagination .page-numbers.dots {
+    border: none;
+    background: transparent;
+}
+
+/* No Results */
+.us-no-results-page {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.us-no-results-icon {
+    font-size: 80px;
+    margin-bottom: 30px;
+    opacity: 0.3;
+}
+
+.us-no-results-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 15px;
+}
+
+.us-no-results-text {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 40px;
+}
+
+.us-search-suggestions {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.us-search-suggestions h3 {
+    font-size: 18px;
+    margin: 0 0 15px;
+    color: #333;
+}
+
+.us-search-suggestions ul {
+    margin: 0;
+    padding: 0 0 0 20px;
+}
+
+.us-search-suggestions li {
+    margin: 8px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .us-search-results-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+}
+
+@media (max-width: 992px) {
+    .us-search-results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .us-card-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .us-search-results-page {
+        padding: 30px 15px;
+    }
+    
+    .us-search-page-title {
+        font-size: 24px;
+    }
+    
+    .us-search-section-title {
+        font-size: 20px;
+        padding: 12px 15px;
+    }
+    
+    .us-search-results-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .us-card-image {
+        height: 150px;
+    }
+    
+    .us-card-content {
+        padding: 15px;
+    }
+    
+    .us-card-title {
+        font-size: 16px;
+        min-height: 44px;
+    }
+    
+    .us-card-excerpt {
+        font-size: 13px;
+        -webkit-line-clamp: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .us-search-results-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .us-search-result-card {
+        flex-direction: row;
+    }
+    
+    .us-card-link {
+        flex-direction: row;
+    }
+    
+    .us-card-image {
+        width: 120px;
+        height: 120px;
+        flex-shrink: 0;
+    }
+    
+    .us-card-content {
+        flex: 1;
+    }
+    
+    .us-card-title {
+        font-size: 15px;
+        min-height: auto;
+    }
+    
+    .us-card-excerpt {
+        display: none;
+    }
+    
+    .us-card-actions {
+        padding: 10px;
+    }
+    
+    .us-add-to-cart-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Elementor Compatibility */
+.elementor-widget-container .us-search-results-page {
+    padding: 0;
+}
+
+.elementor .us-search-page-container {
+    max-width: 100%;
+}

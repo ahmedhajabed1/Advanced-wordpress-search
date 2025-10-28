@@ -1,0 +1,142 @@
+/* Admin Styles for Unified Search */
+
+.us-settings-wrap {
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.us-admin-container {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    margin-top: 20px;
+}
+
+.us-admin-tabs {
+    display: flex;
+    border-bottom: 1px solid #ccd0d4;
+    background: #f9f9f9;
+    padding: 0;
+    margin: 0;
+}
+
+.us-tab-button {
+    padding: 15px 25px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #50575e;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.us-tab-button:hover {
+    background: #fff;
+    color: #2271b1;
+}
+
+.us-tab-button.active {
+    background: #fff;
+    color: #2271b1;
+    border-bottom-color: #2271b1;
+}
+
+.us-tab-content {
+    display: none;
+    padding: 30px;
+}
+
+.us-tab-content.active {
+    display: block;
+}
+
+.us-tab-content h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.us-tab-content h3 {
+    margin-top: 30px;
+    color: #1d2327;
+    font-size: 16px;
+}
+
+.us-tab-content .form-table {
+    margin-top: 20px;
+}
+
+.us-tab-content .form-table th {
+    width: 220px;
+    font-weight: 600;
+}
+
+.us-tab-content .form-table input[type="text"],
+.us-tab-content .form-table input[type="number"] {
+    padding: 8px 12px;
+}
+
+.us-tab-content .form-table input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+.us-tab-content .form-table label {
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.us-tab-content code {
+    background: #f0f0f1;
+    padding: 8px 16px;
+    display: inline-block;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+#us-index-status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+#us-index-status.success {
+    color: #00a32a;
+    background: #dff0d8;
+}
+
+#us-index-status.error {
+    color: #d63638;
+    background: #f8d7da;
+}
+
+.us-settings-wrap .spinner.is-active {
+    visibility: visible;
+    display: inline-block;
+    float: none;
+}
+
+/* Field descriptions */
+.us-tab-content .description {
+    color: #646970;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Submit button */
+.us-admin-container .submit {
+    padding: 20px 30px;
+    margin: 0;
+    border-top: 1px solid #e5e5e5;
+    background: #f9f9f9;
+}
+
+.us-admin-container .submit .button-primary {
+    font-size: 14px;
+    padding: 8px 20px;
+    height: auto;
+}
