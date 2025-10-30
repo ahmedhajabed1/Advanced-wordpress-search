@@ -60,14 +60,14 @@ class US_Search_Engine {
         
         $post_type_sql = "post_type IN ('" . implode("','", array_map('esc_sql', $post_types)) . "')";
         
-        // Build search conditions - search for ANY word match
+        // Build search conditions
         $search_conditions = array();
         
         foreach ($search_words as $word) {
             $word = esc_sql($wpdb->esc_like($word));
             $word_conditions = array();
             
-            // Always search in title (most important)
+            // Always search in title
             $word_conditions[] = "title LIKE '%%$word%%'";
             
             if (!empty($settings['search_in_content'])) {
@@ -87,7 +87,6 @@ class US_Search_Engine {
             }
             
             if (!empty($word_conditions)) {
-                // OR condition for each word (find if ANY field matches this word)
                 $search_conditions[] = '(' . implode(' OR ', $word_conditions) . ')';
             }
         }
